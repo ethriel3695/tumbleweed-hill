@@ -15,14 +15,7 @@ const HeroLanding = ({ page }) => {
                 <div>
                   {sect.image ? (
                     <div className="max-w-full">
-                      <img
-                        className="max-w-full max-h-full"
-                        key={`${index}-key`}
-                        src={sect.image.fluid.src}
-                        srcSet={sect.image.fluid.srcSet}
-                        sizes={sect.image.fluid.sizes}
-                        alt={sect.image.description}
-                      />
+                      <Image fluid={sect.image.fluid} />
                     </div>
                   ) : null}
                   <div className="container">
@@ -49,8 +42,6 @@ const HeroLanding = ({ page }) => {
                         )}
                       </div>
                     )}
-                  </div>
-                  <div className="container">
                     <div>
                       <div className="flex flex-wrap lg:flex-row flex-col">
                         {sect.product &&
@@ -117,13 +108,7 @@ const HeroLanding = ({ page }) => {
                               key={`gallery-${index}`}
                               className="w-full sm:w-1/2 lg:w-1/2 p-3 md:p-6 shadow-lg rounded-md overflow-hidden"
                             >
-                              <img
-                                key={`${index}-key`}
-                                src={gal.fluid.src}
-                                srcSet={gal.fluid.srcSetWebp}
-                                sizes={gal.fluid.sizes}
-                                alt={gal.description}
-                              />
+                              {gal.fluid && <Image fluid={gal.fluid} />}
                             </div>
                           );
                         })}
