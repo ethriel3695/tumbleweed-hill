@@ -8,7 +8,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Tumbleweed Hill`,
-        // icon: `content/assets/logo/logo.svg`,
+        icon: `content/assets/logo/logo.png`,
         short_name: `Tumbleweed Hill`,
         start_url: `/`,
         background_color: `#008080`,
@@ -30,11 +30,12 @@ module.exports = {
     newsletterTitle: '',
     isAuthApp: false,
     social: {
-      facebook: 'https://www.facebook.com/tumbleweedhill',
+      facebook: 'https://www.facebook.com/Tumbleweed-Hill-104474844612526',
       twitter: '',
       github: '',
       email: '',
     },
     externalLinks: [{ label: '', link: '' }],
+    hasNotifications: false,
   },
 };

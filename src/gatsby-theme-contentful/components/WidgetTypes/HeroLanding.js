@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import TextOnlyCard from 'gatsby-theme-contentful/src/components/Card/TextOnlyCard';
-import Button from '../Button/Button';
+import Button from 'gatsby-theme-contentful/src/components/Button/Button';
+import Carousel from 'gatsby-theme-contentful/src/components/Carousel/Carousel';
 
 const HeroLanding = ({ page }) => {
   return (
@@ -11,6 +12,7 @@ const HeroLanding = ({ page }) => {
       <div>
         <div>
           {page.section.map((sect, index) => {
+            console.log(sect);
             return (
               <div key={index}>
                 <div>
@@ -18,6 +20,9 @@ const HeroLanding = ({ page }) => {
                     <div className="max-w-full">
                       <Image fluid={sect.image.fluid} />
                     </div>
+                  ) : null}
+                  {sect.gallery && sect.slug === 'hero' ? (
+                    <Carousel images={sect.gallery} />
                   ) : null}
                   <div className="container">
                     <div
@@ -27,7 +32,7 @@ const HeroLanding = ({ page }) => {
                       {sect.title}
                     </div>
                     {sect.description && (
-                      <div className="text-lg text-gray-800 text-center mb-2">
+                      <div className="text-lg text-gray-800 text-left mb-2">
                         {documentToReactComponents(
                           sect.description.json,
                           // , {
