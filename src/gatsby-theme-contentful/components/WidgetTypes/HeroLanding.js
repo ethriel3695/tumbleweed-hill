@@ -32,7 +32,7 @@ const HeroLanding = ({ page }) => {
                       {sect.title}
                     </div>
                     {sect.description && (
-                      <div className="text-lg text-gray-800 text-left mb-2">
+                      <div className="text-lg text-gray-800 text-center mb-2">
                         {documentToReactComponents(
                           sect.description.json,
                           // , {
@@ -108,6 +108,7 @@ const HeroLanding = ({ page }) => {
 
                     <div className="flex flex-wrap -mx-3 lg:-mx-6">
                       {sect.gallery &&
+                        sect.slug !== 'hero' &&
                         sect.gallery.map((gal, index) => {
                           return (
                             <div
