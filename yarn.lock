@@ -6687,10 +6687,10 @@ gatsby-telemetry@^1.3.4:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-theme-contentful@^0.0.84:
-  version "0.0.84"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-contentful/-/gatsby-theme-contentful-0.0.84.tgz#3edf5923b3b8e52a5b62fb6b63b292c476a630dd"
-  integrity sha512-qFowGoel/MqstSQZ1UKaPH6LI1dQNj3SuJb4z8zmEFOgV/YLN2C5eGkVCmCQHiJZi7/96KSxZJDiGFr5elzTWQ==
+gatsby-theme-contentful@^0.0.85:
+  version "0.0.85"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-contentful/-/gatsby-theme-contentful-0.0.85.tgz#bf0cc5684af0a3d8a7de3c0042c57b9be1ecb516"
+  integrity sha512-Qmnn0lvJSIVu8B/B3upLg/mV1yXkvNbHY8KEURVPWn5xba49XqIJjJuCi+rLLdG/n2D9M9omKvXBuCfj4ShhTA==
   dependencies:
     "@auth0/auth0-spa-js" "^1.6.4"
     "@contentful/rich-text-react-renderer" "^13.4.0"

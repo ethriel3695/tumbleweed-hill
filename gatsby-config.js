@@ -8,7 +8,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Tumbleweed Hill`,
-        icon: `content/assets/logo/logo.png`,
+        icon: `content/assets/logo/logo.jpg`,
         short_name: `Tumbleweed Hill`,
         start_url: `/`,
         background_color: `#008080`,

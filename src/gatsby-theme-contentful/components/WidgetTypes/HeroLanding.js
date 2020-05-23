@@ -12,7 +12,6 @@ const HeroLanding = ({ page }) => {
       <div>
         <div>
           {page.section.map((sect, index) => {
-            console.log(sect);
             return (
               <div key={index}>
                 <div>
@@ -105,17 +104,32 @@ const HeroLanding = ({ page }) => {
                           );
                         })}
                     </div>
-
-                    <div className="flex flex-wrap -mx-3 lg:-mx-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
                       {sect.gallery &&
                         sect.slug !== 'hero' &&
                         sect.gallery.map((gal, index) => {
                           return (
                             <div
-                              key={`gallery-${index}`}
-                              className="w-full sm:w-1/2 lg:w-1/2 p-3 md:p-6 shadow-lg rounded-md overflow-hidden"
+                              key={`galleryContainer-${index}`}
+                              className="col-span-12 lg:col-span-1"
                             >
-                              {gal.fluid && <Image fluid={gal.fluid} />}
+                              {gal.description ? (
+                                <div
+                                  key={`gallery-${index}`}
+                                  className="p-3 md:p-6 shadow-lg rounded-md overflow-hidden"
+                                >
+                                  {gal.fluid && <Image fluid={gal.fluid} />}
+                                  <h3>{gal.title}</h3>
+                                  <div>{gal.description}</div>
+                                </div>
+                              ) : (
+                                <div
+                                  key={`gallery-${index}`}
+                                  className="p-3 md:p-6 shadow-lg rounded-md overflow-hidden"
+                                >
+                                  {gal.fluid && <Image fluid={gal.fluid} />}
+                                </div>
+                              )}
                             </div>
                           );
                         })}

@@ -85,6 +85,7 @@ export const query = graphql`
           }
           gallery {
             title
+            description
             fluid(maxWidth: 630, quality: 100) {
               ...GatsbyContentfulFluid_noBase64
             }
