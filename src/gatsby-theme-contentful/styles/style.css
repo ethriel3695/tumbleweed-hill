@@ -78,6 +78,10 @@ article {
     @apply border-yellow-600;
 }
 
+.headerLogoSize {
+    width: 8rem;
+}
+
 .swiper-pagination-bullet {
     @apply .bg-white;
 }
@@ -101,7 +105,7 @@ article {
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: rgba(214, 158, 46, 1);
 }
 .swiper-container {
   margin-left: auto;
@@ -375,6 +379,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 4px;
+  padding: 7px;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
