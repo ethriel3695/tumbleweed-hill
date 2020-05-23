@@ -116,7 +116,7 @@ const HeroLanding = ({ page }) => {
                                   className="p-3 md:p-6 shadow-lg rounded-md overflow-hidden"
                                 >
                                   {gal.fluid && <Image fluid={gal.fluid} />}
-                                  <h3>{gal.title}</h3>
+                                  <h6>{gal.title}</h6>
                                   <div>{gal.description}</div>
                                 </div>
                               ) : (
