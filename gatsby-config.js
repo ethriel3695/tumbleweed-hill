@@ -19,6 +19,17 @@ module.exports = {
         // theme_color_in_head: false
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Caveat`,
+            variants: [`400`, `700`],
+          },
+        ],
+      },
+    },
   ],
   siteMetadata: {
     title: `Tumbleweed Hill`,
@@ -31,6 +42,7 @@ module.exports = {
     isAuthApp: false,
     social: {
       facebook: 'https://www.facebook.com/Tumbleweed-Hill-104474844612526',
+      instagram: 'https://www.instagram.com/tumbleweed.hill',
       twitter: '',
       github: '',
       email: '',

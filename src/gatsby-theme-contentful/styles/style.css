@@ -5,6 +5,8 @@ html body {
 }
 
 h1 {
+   font-family: "Caveat";
+
     @apply text-5xl;
 
     @apply font-bold;
@@ -13,7 +15,9 @@ h1 {
 }
 
 h2 {
-    @apply text-4xl;
+   font-family: "Caveat";
+
+    @apply text-5xl;
 
     @apply font-semibold;
 
@@ -21,6 +25,8 @@ h2 {
 }
 
 h3 {
+   font-family: "Caveat";
+
     @apply text-3xl;
 
     @apply font-semibold;
@@ -29,6 +35,8 @@ h3 {
 }
 
 h4 {
+   font-family: "Caveat";
+   
     @apply text-2xl;
 
     @apply font-semibold;
@@ -66,31 +74,31 @@ article {
 
 @tailwind components;
 
-.bgThemeColor {
+.bgPrimary {
     @apply text-white bg-yellow-600;
 }
 
-.bgThemeColor:hover {
+.bgPrimary:hover {
     @apply bg-yellow-700;
 }
 
-.textThemeColor {
+.textPrimary {
     @apply text-yellow-600;
 }
 
-.textThemeColor:hover {
+.textPrimary:hover {
     @apply text-yellow-700;
 }
 
-.borderThemeColor {
+.borderPrimary {
     @apply border-yellow-600;
 }
 
-.borderThemeColor:hover {
+.borderPrimary:hover {
     @apply border-yellow-600;
 }
 
-.borderThemeColor:active {
+.borderPrimary:active {
     @apply border-yellow-600;
 }
 

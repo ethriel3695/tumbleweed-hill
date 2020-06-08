@@ -5,6 +5,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import TextOnlyCard from 'gatsby-theme-contentful/src/components/Card/TextOnlyCard';
 import Button from 'gatsby-theme-contentful/src/components/Button/Button';
 import Carousel from 'gatsby-theme-contentful/src/components/Carousel/Carousel';
+import GoogleMaps from 'gatsby-theme-contentful/src/components/Maps/RegularGoogleMap';
 
 const HeroLanding = ({ page }) => {
   return (
@@ -28,7 +29,7 @@ const HeroLanding = ({ page }) => {
                       {sect.title}
                     </h2>
                     {sect.description && (
-                      <p className="text-lg text-gray-800 text-left mb-2">
+                      <div className="text-lg text-gray-800 text-left mb-2">
                         {documentToReactComponents(
                           sect.description.json,
                           // , {
@@ -42,7 +43,7 @@ const HeroLanding = ({ page }) => {
                           // },
                           // }
                         )}
-                      </p>
+                      </div>
                     )}
                     <div>
                       <div className="flex flex-wrap lg:flex-row flex-col">
@@ -116,7 +117,7 @@ const HeroLanding = ({ page }) => {
                                   className="p-3 md:p-6 shadow-lg rounded-md overflow-hidden"
                                 >
                                   {gal.fluid && <Image fluid={gal.fluid} />}
-                                  <h6>{gal.title}</h6>
+                                  <h5>{gal.title}</h5>
                                   <div>{gal.description}</div>
                                 </div>
                               ) : (
@@ -136,6 +137,9 @@ const HeroLanding = ({ page }) => {
               </div>
             );
           })}
+        </div>
+        <div className="mt-5 container">
+          <GoogleMaps />
         </div>
       </div>
     </div>
