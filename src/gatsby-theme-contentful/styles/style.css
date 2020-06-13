@@ -83,22 +83,24 @@ article {
 }
 
 .textPrimary {
-    @apply text-yellow-600;
+    @apply text-yellow-600 !important;
 }
 
 .textPrimary:hover {
-    @apply text-yellow-700;
+    @apply text-yellow-700 !important;
 }
 
 .borderPrimary {
     @apply border-yellow-600;
+    @apply text-gray-900;
+}
+
+.borderPrimaryActive {
+    @apply border-yellow-600 !important;
+    @apply text-gray-900 !important;
 }
 
 .borderPrimary:hover {
-    @apply border-yellow-600;
-}
-
-.borderPrimary:active {
     @apply border-yellow-600;
 }
 

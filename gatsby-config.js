@@ -45,7 +45,7 @@ module.exports = {
       instagram: 'https://www.instagram.com/tumbleweed.hill',
       twitter: '',
       github: '',
-      email: '',
+      email: 'mailto:tumbleweedhillstore@gmail.com',
     },
     externalLinks: [{ label: '', link: '' }],
     hasNotifications: false,
