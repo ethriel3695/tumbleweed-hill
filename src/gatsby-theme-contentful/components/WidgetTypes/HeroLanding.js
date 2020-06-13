@@ -118,7 +118,7 @@ const HeroLanding = ({ page }) => {
                                 >
                                   {gal.fluid && (
                                     <Image
-                                      className="opacity-75 hover:opacity-100 cursor-pointer"
+                                      className="opacity-100 hover:opacity-75 cursor-pointer"
                                       fluid={gal.fluid}
                                     />
                                   )}
@@ -134,7 +134,7 @@ const HeroLanding = ({ page }) => {
                                 >
                                   {gal.fluid && (
                                     <Image
-                                      className="opacity-75 hover:opacity-100 cursor-pointer"
+                                      className="opacity-100 hover:opacity-75 cursor-pointer"
                                       fluid={gal.fluid}
                                     />
                                   )}
