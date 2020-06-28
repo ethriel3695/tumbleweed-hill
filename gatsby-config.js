@@ -42,7 +42,7 @@ module.exports = {
     isAuthApp: false,
     social: {
       facebook: 'https://www.facebook.com/Tumbleweed-Hill-104474844612526',
-      instagram: 'https://www.instagram.com/tumbleweed.hill',
+      instagram: 'https://www.instagram.com/tumbleweedhillstore',
       twitter: '',
       github: '',
       email: 'mailto:tumbleweedhillstore@gmail.com',
