@@ -150,11 +150,11 @@ const HeroLanding = ({ page }) => {
             );
           })}
         </div>
-        {page.slug === '/' && (
+        {/*page.slug === '/' && (
           <div className="mt-5 container">
             <GoogleMaps />
           </div>
-        )}
+        )*/}
       </div>
     </div>
   );
